@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="proyecto.contol.idmc.appred.redapp.codigosAdicionales">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="resultadoedad"
+            android:id="@+id/txteresultadoedad"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+
+<!-- ==================================== -->
+    <HorizontalScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/horizontalScrollView">
+        <LinearLayout
+            android:id="@+id/codigosadicionales"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btnprincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Principal" />
+            <Button
+                android:id="@+id/btnsuplemento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="007"
+                />
+            <Button
+                android:id="@+id/btnprofilaxis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="008"
+                />
+            <Button
+                android:id="@+id/btnestimulacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="016"
+                />
+            <Button
+                android:id="@+id/btnagudezavisaul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="019"
+                />
+            <Button
+                android:id="@+id/btnsaludmental"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="022"
+                />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/codadicionaltexto"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtdescripcion"
+        android:layout_marginLeft="12dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carvSMI"
+                android:layout_gravity="center"
+                android:layout_width="297dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="30dp"
+                card_view:cardCornerRadius="3dp"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/smitexto"
+                    android:id="@+id/textView3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Smi"
+                    android:id="@+id/txtSmi"
+                    />
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carvVacuna"
+                android:layout_gravity="center"
+                android:layout_width="297dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="30dp"
+                card_view:cardCornerRadius="3dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vacunatexto"
+                        android:id="@+id/textView4" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vacuna"
+                        android:id="@+id/txtVacuna"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carvDiagnostico"
+                android:layout_gravity="center"
+                android:layout_width="297dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                card_view:cardCornerRadius="3dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Diagnosticos"
+                        android:id="@+id/textView5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Diagnostico"
+                        android:id="@+id/texDiagnotico" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carvMedicamento"
+                android:layout_gravity="center"
+                android:layout_width="297dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="30dp"
+                card_view:cardCornerRadius="3dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Medicamento"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtMedicamento"
+
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carvInsumo"
+                android:layout_gravity="center"
+                android:layout_width="297dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="30dp"
+                card_view:cardCornerRadius="3dp"
+                ><LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                ><TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/insumotexto"
+                android:id="@+id/textView6" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/txtInsumos"
+                    />
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carvProcedimiento"
+                android:layout_gravity="center"
+                android:layout_width="297dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="30dp"
+                card_view:cardCornerRadius="3dp"
+                ><LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                ><TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/procedimientotexto"
+                android:id="@+id/textView8" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/txtProcedimiento"
+                    />
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carvObservacion"
+                android:layout_gravity="center"
+                android:layout_width="297dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="30dp"
+                card_view:cardCornerRadius="3dp"
+                ><LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                ><TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/observaciontexto"
+                android:id="@+id/textView9" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/txtObservaciones"
+                    />
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carvTopes"
+                android:layout_gravity="center"
+                android:layout_width="297dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="30dp"
+                card_view:cardCornerRadius="3dp"
+                ><LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                ><TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/topestexto"
+                android:id="@+id/textView10" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/txtTopes"
+                    />
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carvOtrosDiagnosticos"
+                android:layout_gravity="center"
+                android:layout_width="297dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="30dp"
+                card_view:cardCornerRadius="3dp"
+                ><LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                ><TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/otrosdiagnosticostexto"
+                android:id="@+id/textView11" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/txtOtrosDiagnosticos"
+                    />
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

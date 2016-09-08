@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="proyecto.contol.idmc.appred.redapp.InicioSistema">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/carviewtres"
+        android:layout_gravity="center"
+        android:layout_width="297dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="25dp"
+        card_view:cardCornerRadius="3dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione Indicador Capita:"
+            android:id="@+id/textView10"
+            android:layout_above="@+id/button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="45dp"
+
+
+            >
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/radioGroup"
+                >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdbninio"
+                android:text="NIÑO"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdbgestante"
+                android:text="GESTANTE"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tipoindicadoruno"
+            android:layout_gravity="center"
+            android:layout_width="297dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="25dp"
+            card_view:cardCornerRadius="3dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtdia"
+                        android:hint="Dia"
+                        android:maxLength="2"
+                        android:inputType="number"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Mes"
+                        android:inputType="number"
+                        android:id="@+id/txtmes"
+                        android:maxLength="2"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"
+                        />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Año"
+                        android:inputType="number"
+                        android:id="@+id/textanio"
+                        android:maxLength="4"
+                        />
+                </LinearLayout>
+                <Button
+
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:text="NIÑO"
+                    android:textColor="@color/colortexto"
+                    android:id="@+id/btnninio"
+                    android:background="#5dceb9"
+                    android:layout_marginTop="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- =================================================================== -->
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tipoindicadordos"
+            android:layout_gravity="center"
+            android:layout_width="297dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="25dp"
+            card_view:cardCornerRadius="3dp"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edittexnumcontrol"
+                        android:hint="NUMERO DE CONTROL"
+                        android:maxLength="2"
+                        android:inputType="number"
+                        />
+                    />
+                </LinearLayout>
+                <Button
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:text="GESTANTE"
+                    android:textColor="@color/colortexto"
+                    android:id="@+id/btngestante"
+                    android:background="#d26a64"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <!-- ================================VISTA A SEGUIMIENTO DE PACIENTE=================================== -->
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/seguimientoPaciente"
+            android:layout_gravity="center"
+            android:layout_width="297dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            card_view:cardCornerRadius="3dp"
+            android:visibility="visible"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:text="PACIENTE"
+                    android:textColor="@color/colortexto"
+                    android:id="@+id/btnpacientsegui"
+                    android:background="#5a81da"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
